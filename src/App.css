@@ -41,3 +41,95 @@
   color: #888;
 }
 
+html, body, #root {
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; /* <<< force always scroll */
+  scroll-padding-top: 120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #eaeaea;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.cert-card {
+  background: #f9f9f9;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.cert-card ul {
+  list-style: inside;
+}
+
+
+

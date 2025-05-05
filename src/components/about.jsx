@@ -7,7 +7,7 @@ const About= () => {
 
     <div className="container">
 
-
+  {/* Hero Section */}
   <section className="hero">
     <img src={profileImage1} alt="Jazzlyn Pancho" className="profile1-img" />
     <div className="hero-text">

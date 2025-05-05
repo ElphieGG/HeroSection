@@ -1,19 +1,20 @@
-
+/* Default Styles */
 body, html {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; Prevent scrolling */
+  overflow-y: auto;
   height: 100%;
   font-family: "Poppins", sans-serif;
   background-color: #f4f4fc;
   justify-content: center;
 }
 
-
+/* Container should take full viewport height */
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* Full screen height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,47 +22,47 @@ body, html {
   overflow: hidden;
 }
 
-
+/* Background Decoration */
 .background-decor {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  z-index: -1; 
+  z-index: -1; /* Moves it behind content */
 }
 
-
+/* Hero Section */
 .hero {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  height: 100vh; 
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Keeps them horizontally aligned */
+  height: 100vh; /* Ensures it takes full screen height */
   max-width: 1200px;
   width: 100%;
   gap: 40px;
 }
 
-
+/* Profile Image - Left Side */
 .profile1-img {
-  flex: 1; 
-  width:200px;
+  flex: 1; /* Takes equal space */
+  width:100px;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
 }
 
-
+/* Hero Text - Right Side */
 .hero-text {
-  flex: 1; 
+  flex: 1; /* Takes equal space */
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center; /* Centers text vertically */
   max-width: 500px;
-  text-align: left; 
+  text-align: left; /* Keeps text aligned left */
 }
 
-
+/* Hello Text */
 .hello-text h1 {
   font-family: "Eyesome Duo Script";
   font-size: 60px;
@@ -70,19 +71,19 @@ body, html {
   margin-bottom: 10px;
 }
 
-
+/* Description */
 .description p {
   font-size: 20px;
   color: #555;
   line-height: 1.6;
 }
 
+/* ✨ Responsive Design */
 
-
-
+/* 🔹 Tablets (Below 1024px) */
 @media (max-width: 1024px) {
   body {
-    overflow: auto; 
+    overflow: auto; /* Allow scrolling */
   }
   
   .hero {
@@ -100,11 +101,11 @@ body, html {
     font-size: 50px;
   }
 }
-
+/* 🔹 Tablets (Below 1024px) */
 @media (max-width: 1005px) {
   body {
     padding: 70px;
-    overflow: auto; 
+    overflow: auto; /* Allow scrolling */
   }
   
   .hero {
@@ -123,10 +124,10 @@ body, html {
   }
 }
 
-
+/* 🔹 Mobile Devices (Below 768px) */
 @media (max-width: 768px) {
   body {
-    overflow: auto; 
+    overflow: auto; /* Allow scrolling */
   }
   .hero {
     flex-direction: column;

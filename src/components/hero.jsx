@@ -7,7 +7,7 @@ const Hero= () => {
 
     <div className="container">
 
-
+  {/* Hero Section */}
   <section className="hero">
     <img src={profileImage} alt="Jazzlyn Pancho" className="profile-img" />
     <div className="hero-text">
